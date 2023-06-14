@@ -1,8 +1,8 @@
 {
     "env": {
-      "browser": true,
-      "es6": true,
-      "jest": true
+        "browser": true,
+        "es6": true,
+        "jest": true
     },
     "parser": "babel-eslint",
     "parserOptions": {
@@ -22,4 +22,4 @@
       "dist/",
       "build/"
     ]
-  }
+}
