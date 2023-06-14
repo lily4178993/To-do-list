@@ -6,6 +6,25 @@
     <title>My To-Do List</title>
 </head>
 <body>
-    <h1>Hello Webpack</h1>
+    <header>
+        <h1>My To-Do List</h1>
+    </header>
+    <main class="container">
+        <div class="card-head">
+            <h2 class="title">Today's To Do</h2>
+            <button type="button" class="btn refresh">&circlearrowright;</button>
+        </div>
+        <div class="card-body">
+            <form class="add-item">
+                <input type="text" name="add-item" placeholder="Add to your list..." id="add-item" class="add-new-item">
+                <button type="submit" class="btn btn-add-new-item">&hookleftarrow;</button>
+            </form>
+            <ul class="list" data-container="to-do-list-container">
+            </ul>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn-remove-all">Clear all completed</button>
+        </div>
+    </main>
 </body>
 </html>
