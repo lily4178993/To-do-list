@@ -2,8 +2,10 @@
  * This module is used to create a new To-do task element in the main HTML file
 */
 import toDoListCollection from './data.js';
+import remove from './remove.js';
 import moreIcon from '../../../assets/more-1.png';
 import removeIcon from '../../../assets/remove.png';
+import { saveToStorage } from './storage.js';
 
 const LIST_CONTAINER = document.querySelector('.list');
 const displayTodoList = () => {
@@ -32,6 +34,12 @@ const displayTodoList = () => {
     BUTTON_MORE.classList.add('btn', 'btn-more');
     const BUTTON_REMOVE = document.createElement('button');
     BUTTON_REMOVE.type = 'submit';
+    BUTTON_REMOVE.id = todoItem.index;
+    BUTTON_REMOVE.addEventListener('click', () => {
+      remove(todoItem.index);
+      saveToStorage(toDoListCollection);
+      displayTodoList();
+    });
     BUTTON_REMOVE.classList.add('btn', 'btn-remove');
     const MORE_ICON = document.createElement('img');
     MORE_ICON.src = moreIcon;
