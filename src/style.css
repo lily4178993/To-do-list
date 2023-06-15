@@ -140,10 +140,6 @@ header {
   font-weight: 700;
 }
 
-.list-item .edit {
-  display: none;
-}
-
 .list-item .btn {
   justify-self: flex-end;
 }
@@ -151,13 +147,13 @@ header {
 .list-item .btn.btn.btn-remove {
   width: 25px;
   height: 25px;
-  display: none;
 }
 
 .list-item .btn.btn-more {
   width: 15px;
   height: 15px;
   transform: rotate(90deg);
+  display: none;
 }
 
 .icon {
