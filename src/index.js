@@ -7,4 +7,5 @@ FORM_ADD_NEW_ITEM.addEventListener('submit', (event) => {
   event.preventDefault();
   addNewTodoItem();
   createTodoItem();
+  document.location.reload();
 });
