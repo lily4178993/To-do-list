@@ -9,7 +9,7 @@ import removeIcon from '../../../assets/remove.png';
 import { saveToStorage } from './storage.js';
 
 const LIST_CONTAINER = document.querySelector('.list');
-const displayTodoList = () => {
+const DISPLAY_TODO_LIST = () => {
   LIST_CONTAINER.innerHTML = '';
   toDoListCollection.forEach((todoItem) => {
     const LIST_ITEM = document.createElement('li');
@@ -56,7 +56,7 @@ const displayTodoList = () => {
       event.stopPropagation();
       remove(todoItem.index);
       saveToStorage(toDoListCollection);
-      displayTodoList();
+      DISPLAY_TODO_LIST();
     });
     BUTTON_MORE.appendChild(MORE_ICON);
     BUTTON_REMOVE.appendChild(REMOVE_ICON);
@@ -68,6 +68,6 @@ const displayTodoList = () => {
     LIST_CONTAINER.appendChild(LIST_ITEM);
   });
 };
-// Call the displayTodoList function to display the initial list
-displayTodoList();
-export { displayTodoList as default };
+// Call the DISPLAY_TODO_LIST function to display the initial list
+DISPLAY_TODO_LIST();
+export { DISPLAY_TODO_LIST as default };
