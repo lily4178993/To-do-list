@@ -21,7 +21,7 @@ const displayTodoList = () => {
     INPUT_CHECKBOX.classList.add('checkbox');
     const VIEW_ITEM = document.createElement('div');
     VIEW_ITEM.classList.add('view_item');
-    const VIEW_LABEL = document.createElement('label');
+    const VIEW_LABEL = document.createElement('p');
     VIEW_LABEL.classList.add('label');
     VIEW_LABEL.textContent = todoItem.description;
     const BUTTON_MORE = document.createElement('button');
