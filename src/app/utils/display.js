@@ -24,11 +24,6 @@ const displayTodoList = () => {
     const VIEW_LABEL = document.createElement('label');
     VIEW_LABEL.classList.add('label');
     VIEW_LABEL.textContent = todoItem.description;
-    const INPUT_TEXTAREA = document.createElement('input');
-    INPUT_TEXTAREA.type = 'textarea';
-    INPUT_TEXTAREA.name = 'edit-item';
-    INPUT_TEXTAREA.placeholder = todoItem.description;
-    INPUT_TEXTAREA.classList.add('edit');
     const BUTTON_MORE = document.createElement('button');
     BUTTON_MORE.type = 'button';
     BUTTON_MORE.classList.add('btn', 'btn-more');
@@ -52,7 +47,6 @@ const displayTodoList = () => {
     BUTTON_MORE.appendChild(MORE_ICON);
     BUTTON_REMOVE.appendChild(REMOVE_ICON);
     VIEW_ITEM.appendChild(VIEW_LABEL);
-    VIEW_ITEM.appendChild(INPUT_TEXTAREA);
     LIST_ITEM.appendChild(INPUT_CHECKBOX);
     LIST_ITEM.appendChild(VIEW_ITEM);
     LIST_ITEM.appendChild(BUTTON_REMOVE);
