@@ -138,6 +138,8 @@ header {
 .list-item .label {
   font-size: var(--fontsize-body-1);
   font-weight: 700;
+  padding: 1em 0;
+  outline: transparent;
 }
 
 .list-item .btn {
