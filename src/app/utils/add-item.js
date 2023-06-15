@@ -3,7 +3,6 @@
  * and store it to the local
 */
 import { getFromStorage, saveToStorage } from './storage.js';
-import toDoListCollection from './data.js';
 
 const ADD_NEW_ITEM = () => {
   // Retrieving the To-do task input element
@@ -19,7 +18,6 @@ const ADD_NEW_ITEM = () => {
     };
     UPDATED_LIST.push(NEW_TODO);
     saveToStorage(UPDATED_LIST);
-    toDoListCollection();
   }
   INPUT_ADD_NEW_ITEM.value = '';
 };
