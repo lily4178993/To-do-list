@@ -1,10 +1,13 @@
+/**
+ * This module is used to create a new To-do task element in the main HTML file
+*/
 import toDoListCollection from './data.js';
 import moreIcon from '../../../assets/more-1.png';
 import removeIcon from '../../../assets/remove.png';
 
 const LIST_CONTAINER = document.querySelector('.list');
 
-const ITERATE_TODO_LIST = () => {
+const CREATE_TODO_ITEM = () => {
   toDoListCollection.forEach((todoItem) => {
     const LIST_ITEM = document.createElement('li');
     LIST_ITEM.classList.add('list-item');
@@ -62,4 +65,4 @@ const ITERATE_TODO_LIST = () => {
   });
 };
 
-export { ITERATE_TODO_LIST as default };
+export { CREATE_TODO_ITEM as default };
