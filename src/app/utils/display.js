@@ -3,6 +3,7 @@
 */
 import toDoListCollection from './data.js';
 import remove from './remove.js';
+import edit from './edit.js';
 import moreIcon from '../../../assets/more-1.png';
 import removeIcon from '../../../assets/remove.png';
 import { saveToStorage } from './storage.js';
@@ -30,11 +31,6 @@ const displayTodoList = () => {
     const BUTTON_REMOVE = document.createElement('button');
     BUTTON_REMOVE.type = 'submit';
     BUTTON_REMOVE.id = todoItem.index;
-    BUTTON_REMOVE.addEventListener('click', () => {
-      remove(todoItem.index);
-      saveToStorage(toDoListCollection);
-      displayTodoList();
-    });
     BUTTON_REMOVE.classList.add('btn', 'btn-remove');
     const MORE_ICON = document.createElement('img');
     MORE_ICON.src = moreIcon;
@@ -44,6 +40,24 @@ const displayTodoList = () => {
     REMOVE_ICON.src = removeIcon;
     REMOVE_ICON.alt = 'Remove Icon';
     REMOVE_ICON.classList.add('icon');
+
+    // Add double-click event to VIEW_LABEL
+    VIEW_LABEL.addEventListener('dblclick', (event) => {
+      event.stopPropagation();
+      VIEW_LABEL.contentEditable = 'true';
+      VIEW_LABEL.addEventListener('keydown', () => {
+        const data = VIEW_LABEL.textContent;
+        edit(todoItem.index, data);
+      });
+    });
+
+    // Add click event to BUTTON_REMOVE
+    BUTTON_REMOVE.addEventListener('click', (event) => {
+      event.stopPropagation();
+      remove(todoItem.index);
+      saveToStorage(toDoListCollection);
+      displayTodoList();
+    });
     BUTTON_MORE.appendChild(MORE_ICON);
     BUTTON_REMOVE.appendChild(REMOVE_ICON);
     VIEW_ITEM.appendChild(VIEW_LABEL);
