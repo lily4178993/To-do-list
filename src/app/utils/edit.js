@@ -7,10 +7,10 @@ import { getFromStorage, saveToStorage } from './storage.js';
 
 // Function to remove one To-do task
 const EDIT_TODO_ITEM = (todoID, newDescription) => {
-  const updateList = getFromStorage();
-  console.log(updateList[todoID].description = 'Juste un test');
-  updateList[todoID].description = newDescription;
-  saveToStorage(updateList);
+  const UPDATED_LIST = getFromStorage();
+  console.log(UPDATED_LIST[todoID].description = 'Juste un test');
+  UPDATED_LIST[todoID].description = newDescription;
+  saveToStorage(UPDATED_LIST);
 };
 
 export { EDIT_TODO_ITEM as default };
