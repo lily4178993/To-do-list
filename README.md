@@ -1,291 +1,242 @@
 <a name="readme-top"></a>
 
-<!--
-!!! IMPORTANT !!!
-This README is an example of how you could professionally present your codebase. 
-Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored. 
-
-You should modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
-
-For more information on the importance of a professional README for your repositories: https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/readme_best_practices.md
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="assets/todo-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
+  <h3><b>To Do List</b></h3>
+  ////////////////////////////////////////////
+  <br/>
+  <br/>
+  <br/>
 </div>
 
 <!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
+# <b>Table of Contents 📗
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
+- [About the Project 📖](#about-project)
+  - [Built With](#built-with) 🛠
+    - [Tech Stack 🗜️](#tech-stack)
+    - [Key Features 🏷️](#key-features)
+- [Getting Started 💻](#getting-started)
+  - [Setup ⚙️](#setup)
+  - [Prerequisites 🧱](#prerequisites)
+  - [Install 🏗️](#install)
+  - [Usage 📂](#usage)
+  - [Run tests 🧪](#run-tests)
   - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
-
+- [Author 👤](#author)
+- [Future Features 🔭](#future-features)
+- [Contributing 🤝](#contributing)
+- [Show your support 🌟](#support)
+- [Acknowledgements 🙏](#acknowledgements)
+- [License 📝](#license)
+</b>
+<hr><hr>
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# <b>To Do List  📖</b><a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+**To-do list** is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
+<br><hr>
 
-**[your_project__name]** is a...
+<!-- BUILT WITH -->
+## <b>Built With 🛠</b><a name="built-with"></a><br>
 
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
+<!-- TECH STACK -->
+### <b>Tech Stack 🗜️</b><a name="tech-stack"></a>
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML5</a> markup to build raw structure of this web page</li><br>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS3</a> custom properties, <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">FlexBox</a>, <a href="https://www.w3schools.com/css/css_grid.asp">Grid</a> to make the website visually attractive</li><br>
+    <li><a href="https://reactjs.org/">Javascript</a></li><br>
+    <li><a href="https://mozilla.github.io/addons-linter/">Linters</a> for coding convention and coding formating</li>
+    <li><a href="https://webpack.js.org">Webpack</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://npmjs.com/package/webpack-server">Webpack server</a></li>
   </ul>
 </details>
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+<br><hr>
 
-<!-- Features -->
+<!-- KEY FEATURES -->
+### <b>Key Features 🏷️</b> <a name="key-features"></a>
 
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Adding a new item**
+- **Removing a selected item**
+- **Marking a selected item as complete**
+- **Removing all items marked as complete at once**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<br>
+<hr>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
+<!-- GET STARTED -->
+## <b>Getting Started 💻</b><a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
+<!-- PREREQUISITIES -->
+### <b>Prerequisites 🧱</b><a name="prerequisites"></a>
 
 In order to run this project you need:
 
-<!--
-Example command:
+- A Github account
+- Node JS
+- Webpack
+- A web browser to view output e.g [Microsoft Edge](https://www.microsoft.com/en-us/edge).
+- An IDE e.g [Visual studio code](https://code.visualstudio.com/).
+- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
 
-```sh
- gem install rails
-```
- -->
+<br><hr>
 
-### Setup
+<!-- SETUP -->
+### <b>Setup ⚙️</b><a name="setup"></a>
 
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
+Clone this repository to your desired folder:<br>
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/lily4178993/To-do-list.git
+
+  ```
+  - Navigate to the folder
 ```
---->
+cd my-folder
+cd To-do-list
+```
+- Checkout the branch
+```
+git checkout main
+```
+<br><hr>
 
-### Install
+<!-- INSTALL -->
+### <b>Install 🏗️</b><a name="install"></a>
 
-Install this project with:
-
-<!--
-Example command:
+Install all dependencies:
 
 ```sh
-  cd my-project
-  gem install
+    npm install
 ```
---->
+<br><hr>
 
-### Usage
+<!-- USAGE -->
+### <b>Usage 📂</b><a name="usage"></a>
 
-To run the project, execute the following command:
-
-<!--
-Example command:
-
+To run the project, open your terminal and tap the following line.
 ```sh
-  rails server
+    npm start
 ```
---->
 
-### Run tests
+<!-- TESTS -->
+<br><hr>
+### <b>Run tests 🧪</b><a name="run-tests"></a>
 
+How should it be tested? 
 To run tests, run the following command:
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
+- HTML linter errors run:
 
 ```
- -->
+npx hint .
+```
+
+- CSS linter errors run:
+
+```
+npx stylelint "**/*.{css,scss}" --fix
+```
+
+- JavaScript linter errors run:
+
+```
+npx eslint . --fix
+```
+
+<br><hr>
+
+<!-- DEPLOYEMENT -->
+### <b>Deployment</b> <a name="deployment"></a>
+
+You can deploy this project using: [GitHub Pages](https://www.w3schools.com/git/git_remote_pages.asp?remote=github), [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) ☺️.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br><hr>
 
 <!-- AUTHORS -->
+## 👤 Author <a name="author"></a>
 
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+**Nelly Telli**
+- GitHub: [@lily4178993](https://github.com/lily4178993/)
+- Twitter: [@nelly_telli](https://twitter.com/nelly_telli)
+- LinkedIn: [Nelly T.](https://www.linkedin.com/in/nelly-t-330414266/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br><hr>
 
 <!-- FUTURE FEATURES -->
+## <b>Future Features 🔭</b><a name="future-features"></a>
 
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- **Make the app responsive**
+- **Reordering a selected item (as drag-and-drop)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br><hr>
+
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing <a name="contributing"></a>
+## <b>Contributing 🤝</b><a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+If you have suggestions 📝, ideas 🤔, or bug reports 🐛, please feel free to open an [issue](https://github.com/lily4178993/To-do-list/issues) on GitHub.
+Remember, every contribution, no matter how big or small, makes a difference.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br><hr>
+
+
 
 <!-- SUPPORT -->
+## <b>Show your support 🌟</b><a name="support"></a>
 
-## ⭐️ Show your support <a name="support"></a>
+Thank you for taking the time to explore my GitHub project! Your support means a lot to me. If you find my project valuable and would like to contribute, here are a few ways you can support me:
 
-> Write a message to encourage readers to support your project
+ - <b>Star the project ⭐️</b>: Show your appreciation by starring this GitHub repository. It helps increase visibility and lets others know that the project is well-received.
 
-If you like this project...
+ - <b>Fork the project 🍴 🎣</b>: If you're interested in making improvements or adding new features, feel free to fork the project. You can work on your own version and even submit pull requests to suggest changes.
+
+ - <b>Share with others 🗺️</b>: Spread the word about this project. Share it on social media, mention it in relevant forums or communities, or recommend it to colleagues and friends who might find it useful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br><hr>
 
 <!-- ACKNOWLEDGEMENTS -->
+## <b>Acknowledgments 🙏</b><a name="acknowledgements"></a>
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+I would like to express my sincere gratitude to [Microverse](https://github.com/microverseinc), the dedicated reviewers, and my partners. Your unwavering support, feedbacks, and collaborative efforts have played an immense role in making this journey a resounding success. Thank you for being an integral part of my achievements.
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would also like to thank <a target="_blank" href="https://icons8.com">Icons8</a> for all the images and icons I used in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE -->
+<br><hr>
 
-## 📝 License <a name="license"></a>
+<!-- LICENCE -->
+## <b>License 📝</b><a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
