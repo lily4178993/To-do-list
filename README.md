@@ -237,6 +237,6 @@ I would also like to thank <a target="_blank" href="https://icons8.com">Icons8</
 <!-- LICENCE -->
 ## <b>License 📝</b><a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
