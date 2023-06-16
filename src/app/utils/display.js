@@ -4,6 +4,7 @@
 import toDoListCollection from './data.js';
 import remove from './remove.js';
 import edit from './edit.js';
+import { statusChecked, statusUnchecked, statusAfterReload } from './status.js';
 import moreIcon from '../../../assets/more-1.png';
 import removeIcon from '../../../assets/remove.png';
 import { saveToStorage } from './storage.js';
@@ -58,6 +59,21 @@ const DISPLAY_TODO_LIST = () => {
       saveToStorage(toDoListCollection);
       DISPLAY_TODO_LIST();
     });
+
+    // Add change event to INPUT_CHECKBOX
+    INPUT_CHECKBOX.addEventListener('change', () => {
+      if (INPUT_CHECKBOX.checked === true) {
+        VIEW_LABEL.classList.add('checked');
+        statusChecked(todoItem.index, todoItem.completed);
+        VIEW_LABEL.addEventListener('dblclick', (event) => {
+          event.stopPropagation();
+          VIEW_LABEL.contentEditable = 'false';
+        });
+      } else {
+        VIEW_LABEL.classList.remove('checked');
+        statusUnchecked(todoItem.index, todoItem.completed);
+      }
+    });
     BUTTON_MORE.appendChild(MORE_ICON);
     BUTTON_REMOVE.appendChild(REMOVE_ICON);
     VIEW_ITEM.appendChild(VIEW_LABEL);
@@ -70,4 +86,5 @@ const DISPLAY_TODO_LIST = () => {
 };
 // Call the DISPLAY_TODO_LIST function to display the initial list
 DISPLAY_TODO_LIST();
+statusAfterReload();
 export { DISPLAY_TODO_LIST as default };
