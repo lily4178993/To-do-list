@@ -183,7 +183,6 @@ header {
 }
 
 .card-footer {
-  padding: 2em;
   background: var(--Light-Gray);
   transition: var(--transition-1);
 }
@@ -194,6 +193,8 @@ header {
 }
 
 .btn-remove-all {
-  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
   text-align: center;
 }
