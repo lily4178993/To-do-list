@@ -2,7 +2,7 @@
  * This module is used to create a new To-do task element in the main HTML file
 */
 import toDoListCollection from './data.js';
-import remove from './remove.js';
+import { removeItem } from './remove.js';
 import edit from './edit.js';
 import { statusChecked, statusUnchecked, statusAfterReload } from './status.js';
 import moreIcon from '../../../assets/more-1.png';
@@ -55,7 +55,7 @@ const DISPLAY_TODO_LIST = () => {
     // Add click event to BUTTON_REMOVE
     BUTTON_REMOVE.addEventListener('click', (event) => {
       event.stopPropagation();
-      remove(todoItem.index);
+      removeItem(todoItem.index);
       saveToStorage(toDoListCollection);
       DISPLAY_TODO_LIST();
     });
