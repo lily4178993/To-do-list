@@ -142,20 +142,38 @@ header {
   outline: transparent;
 }
 
+.list-item .label.checked {
+  font-style: italic;
+  text-decoration: line-through;
+}
+
 .list-item .btn {
   justify-self: flex-end;
+}
+
+.list-item:has(.label.checked) {
+  background: var(--White-smoke);
 }
 
 .list-item .btn.btn.btn-remove {
   width: 25px;
   height: 25px;
+  display: none;
+}
+
+.list-item:has(.label.checked) .btn.btn.btn-remove {
+  display: block;
+}
+
+.list-item:has(.label.checked) .btn.btn.btn-more {
+  display: none;
 }
 
 .list-item .btn.btn-more {
   width: 15px;
   height: 15px;
   transform: rotate(90deg);
-  display: none;
+  display: block;
 }
 
 .icon {
@@ -165,7 +183,6 @@ header {
 }
 
 .card-footer {
-  padding: 2em;
   background: var(--Light-Gray);
   transition: var(--transition-1);
 }
@@ -176,6 +193,8 @@ header {
 }
 
 .btn-remove-all {
-  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
   text-align: center;
 }
