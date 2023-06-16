@@ -91,6 +91,7 @@ header {
   width: 60vw;
   max-width: 400px;
   margin: 0.5em auto;
+  background: hsl(0, 0%, 100%);
   box-shadow: var(--shadow);
   transition: var(--transition-1);
 }
@@ -197,4 +198,18 @@ header {
   height: 100%;
   padding: 1em;
   text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 97%;
+  padding: 2em;
+  font-size: var(--fontsize-title-2);
+  text-align: center;
+  z-index: -1;
+}
+
+footer a {
+  color: var(--Desaturated-Blue);
 }

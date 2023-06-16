@@ -18,6 +18,8 @@
   - [Built With](#built-with) 🛠
     - [Tech Stack 🗜️](#tech-stack)
     - [Key Features 🏷️](#key-features)
+  - [Screenshot](#screenshot)
+  - [🚀 Live Demo](#live-demo)
 - [Getting Started 💻](#getting-started)
   - [Setup ⚙️](#setup)
   - [Prerequisites 🧱](#prerequisites)
@@ -78,6 +80,25 @@
 <br>
 <hr>
 
+<!-- SCREENSHOT -->
+
+## <b>Screenshot 📷</b><a name="screenshot"></a>
+Below is an overview of the app.
+<br>
+<div align="center">
+  <img src="assets/app_screenshot.jpg" alt="To-Do List Screenshot" max-width="300"  max-height="320" border="4px solid gray" />
+</div><br>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>
+
+<!-- LIVE DEMO -->
+## <b>Live Demo 🚀</b><a name="live-demo"></a>
+
+This project is hosted on [GitHub pages](#deployment), so if you want to check it online, please click 😊 [here](https://lily4178993.github.io/To-do-list/dist/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>
+
 <!-- GET STARTED -->
 ## <b>Getting Started 💻</b><a name="getting-started"></a>
 
@@ -113,7 +134,7 @@ cd To-do-list
 ```
 - Checkout the branch
 ```
-git checkout main
+git checkout master
 ```
 <br><hr>
 
@@ -131,6 +152,9 @@ Install all dependencies:
 ### <b>Usage 📂</b><a name="usage"></a>
 
 To run the project, open your terminal and tap the following line.
+```sh
+    npm run build
+```
 ```sh
     npm start
 ```
@@ -165,7 +189,9 @@ npx eslint . --fix
 <!-- DEPLOYEMENT -->
 ### <b>Deployment</b> <a name="deployment"></a>
 
-You can deploy this project using: [GitHub Pages](https://www.w3schools.com/git/git_remote_pages.asp?remote=github), [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/) ☺️.
+You can deploy this project using: GitHub Pages, [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/).
+
+This project was deployed using GitHub Pages. For more information about how to use GitHub pages [read here](https://www.w3schools.com/git/git_remote_pages.asp?remote=github) 🤩. If you want to watch a video about how to use GitHub pages instead of reading [click here](https://www.youtube.com/watch?v=QyFcl_Fba-k&t=251s).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -237,6 +263,6 @@ I would also like to thank <a target="_blank" href="https://icons8.com">Icons8</
 <!-- LICENCE -->
 ## <b>License 📝</b><a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
