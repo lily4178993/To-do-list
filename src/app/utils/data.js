@@ -1,15 +1,9 @@
-const TODO_LIST_COLLECTION = [
-  {
-    description: 'wash the dishes',
-    completed: false,
-    index: 1,
-  },
+/**
+ * This module is used to collect all the todos tasks from local storage
+ * and store them to constant named TODO_LIST_COLLECTION
+*/
+import { getFromStorage } from './storage.js';
 
-  {
-    description: 'complete To Do list project',
-    completed: false,
-    index: 2,
-  },
-];
+const TODO_LIST_COLLECTION = getFromStorage();
 
-export { TODO_LIST_COLLECTION as default };
+export default TODO_LIST_COLLECTION;
